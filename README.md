@@ -1,6 +1,6 @@
 # Credit default risk: EDA and an interpretable classifier
 
-[![CI](https://github.com/josee2202/practica1_EDA/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/josee2202/practica1_EDA/actions/workflows/ci.yml)
+[![CI](https://github.com/josee2202/credit-default-risk-ml/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/josee2202/credit-default-risk-ml/actions/workflows/ci.yml)
 ![Python 3.8](https://img.shields.io/badge/python-3.8-blue)
 
 **Problem.** A lender wants to know, at application time, which applicants are likely to have payment difficulties. Only 8% of past applicants did, so a model that always says "will repay" is 92% accurate and useless.
@@ -78,8 +78,8 @@ flowchart TD
 Tested with Python 3.8 on macOS (Intel) and Ubuntu 24.04 (CI). `requirements.txt` pins the packages the notebooks use to the versions they were first run with; `constraints.txt` freezes the rest of the dependency tree as verified in October 2026.
 
 ```bash
-git clone https://github.com/josee2202/practica1_EDA.git
-cd practica1_EDA
+git clone https://github.com/josee2202/credit-default-risk-ml.git
+cd credit-default-risk-ml
 conda create -n credit-risk-py38 python=3.8 -y && conda activate credit-risk-py38   # or any Python 3.8 venv
 pip install -r requirements.txt -c constraints.txt pytest==8.3.3
 # macOS only: the XGBoost/LightGBM wheels need the OpenMP runtime
